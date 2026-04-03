@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad - Soluciones Jurídico Económicas 2010 SL</title>
+  <meta name="description" content="Política de Privacidad de Soluciones Jurídico Económicas 2010 SL. Protegemos sus datos con IA Soberana y medidas de seguridad avanzadas." />
+  <meta name="keywords" content="privacidad, protección de datos, Soluciones Jurídico Económicas, IA Soberana, Madrid, legal" />
+  <meta name="author" content="Soluciones Jurídico Económicas 2010 SL" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Política de Privacidad - Soluciones Jurídico Económicas 2010 SL" />
+  <meta property="og:description" content="Su privacidad es nuestra prioridad. IA Soberana para máxima protección de datos." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/privacy-hero.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Política de Privacidad - Soluciones Jurídico Económicas 2010 SL" />
+  <meta name="twitter:description" content="Su privacidad es nuestra prioridad. IA Soberana para máxima protección de datos." />
+
+  <!-- Google Fonts - Geist -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700;800;900&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Geist', 'system-ui', 'sans-serif'],
+            mono: ['Geist Mono', 'monospace'],
+          },
+          colors: {
+            background: 'var(--background)',
+            foreground: 'var(--foreground)',
+            card: 'var(--card)',
+            'card-foreground': 'var(--card-foreground)',
+            popover: 'var(--popover)',
+            'popover-foreground': 'var(--popover-foreground)',
+            primary: 'var(--primary)',
+            'primary-foreground': 'var(--primary-foreground)',
+            secondary: 'var(--secondary)',
+            'secondary-foreground': 'var(--secondary-foreground)',
+            muted: 'var(--muted)',
+            'muted-foreground': 'var(--muted-foreground)',
+            accent: 'var(--accent)',
+            'accent-foreground': 'var(--accent-foreground)',
+            destructive: 'var(--destructive)',
+            border: 'var(--border)',
+            input: 'var(--input)',
+            ring: 'var(--ring)',
+          },
+          borderRadius: {
+            sm: 'calc(var(--radius) - 4px)',
+            md: 'calc(var(--radius) - 2px)',
+            lg: 'var(--radius)',
+            xl: 'calc(var(--radius) + 4px)',
+          },
+        },
+      },
+    }
+  </script>
+
+  <style>
+    /* ===== CSS Custom Properties (Design Tokens) ===== */
+    :root {
+      --radius: 0.625rem;
+      --background: oklch(1 0 0);
+      --foreground: oklch(0.145 0 0);
+      --card: oklch(1 0 0);
+      --card-foreground: oklch(0.145 0 0);
+      --popover: oklch(1 0 0);
+      --popover-foreground: oklch(0.145 0 0);
+      --primary: oklch(0.205 0 0);
+      --primary-foreground: oklch(0.985 0 0);
+      --secondary: oklch(0.97 0 0);
+      --secondary-foreground: oklch(0.205 0 0);
+      --muted: oklch(0.97 0 0);
+      --muted-foreground: oklch(0.556 0 0);
+      --accent: oklch(0.97 0 0);
+      --accent-foreground: oklch(0.205 0 0);
+      --destructive: oklch(0.577 0.245 27.325);
+      --border: oklch(0.922 0 0);
+      --input: oklch(0.922 0 0);
+      --ring: oklch(0.708 0 0);
+    }
+
+    .dark {
+      --background: oklch(0.145 0 0);
+      --foreground: oklch(0.985 0 0);
+      --card: oklch(0.205 0 0);
+      --card-foreground: oklch(0.985 0 0);
+      --popover: oklch(0.205 0 0);
+      --popover-foreground: oklch(0.985 0 0);
+      --primary: oklch(0.922 0 0);
+      --primary-foreground: oklch(0.205 0 0);
+      --secondary: oklch(0.269 0 0);
+      --secondary-foreground: oklch(0.985 0 0);
+      --muted: oklch(0.269 0 0);
+      --muted-foreground: oklch(0.708 0 0);
+      --accent: oklch(0.269 0 0);
+      --accent-foreground: oklch(0.985 0 0);
+      --destructive: oklch(0.704 0.191 22.216);
+      --border: oklch(1 0 0 / 10%);
+      --input: oklch(1 0 0 / 15%);
+      --ring: oklch(0.556 0 0);
+    }
+
+    /* ===== Base Styles ===== */
+    * {
+      border-color: var(--border);
+    }
+
+    body {
+      background-color: var(--background);
+      color: var(--foreground);
+      font-family: 'Geist', system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* ===== Animations ===== */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes scaleIn {
+      from {
+        opacity: 0;
+        transform: scale(0.85);
+      }
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes float {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(10px);
+      }
+    }
+
+    @keyframes scrollIndicator {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(12px);
+      }
+    }
+
+    @keyframes breathe1 {
+      0%, 100% {
+        transform: scale(1);
+        opacity: 0.3;
+      }
+      50% {
+        transform: scale(1.2);
+        opacity: 0.5;
+      }
+    }
+
+    @keyframes breathe2 {
+      0%, 100% {
+        transform: scale(1.2);
+        opacity: 0.2;
+      }
+      50% {
+        transform: scale(1);
+        opacity: 0.4;
+      }
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+
+    /* ===== Animation Classes ===== */
+    .animate-fade-in-up {
+      opacity: 0;
+      animation: fadeInUp 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    .animate-scale-in {
+      opacity: 0;
+      animation: scaleIn 0.6s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    }
+
+    .animate-float {
+      animation: float 2s ease-in-out infinite;
+    }
+
+    .animate-scroll-indicator {
+      animation: scrollIndicator 2s ease-in-out infinite;
+    }
+
+    .animate-breathe-1 {
+      animation: breathe1 8s ease-in-out infinite;
+    }
+
+    .animate-breathe-2 {
+      animation: breathe2 10s ease-in-out infinite;
+    }
+
+    /* Intersection Observer reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+                  transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .reveal-scale {
+      opacity: 0;
+      transform: scale(0.85);
+      transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+                  transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .reveal-scale.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-10px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .reveal-right {
+      opacity: 0;
+      transform: translateX(10px);
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .reveal-left.visible,
+    .reveal-right.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* ===== Hero Parallax ===== */
+    .hero-bg {
+      transition: transform 0.1s linear;
+      will-change: transform;
+    }
+
+    /* ===== Gradient Text ===== */
+    .gradient-text-gold {
+      background: linear-gradient(to right, #fcd34d, #fef08a, #fcd34d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .gradient-text-amber-light {
+      background: linear-gradient(to right, #d97706, #f59e0b, #eab308);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .dark .gradient-text-amber-light {
+      background: linear-gradient(to right, #fbbf24, #fde047, #fbbf24);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ===== Custom Scrollbar ===== */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: oklch(0.7 0 0 / 30%);
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: oklch(0.6 0 0 / 50%);
+    }
+
+    /* ===== Selection ===== */
+    ::selection {
+      background-color: oklch(0.9 0.05 90);
+      color: oklch(0.2 0 0);
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col bg-background text-foreground">
+
+  <!-- ==================== HERO SECTION ==================== -->
+  <section id="hero" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+    <!-- Background image with parallax -->
+    <div class="hero-bg absolute inset-0 z-0" id="hero-bg">
+      <div
+        class="absolute inset-0 bg-cover bg-center"
+        style="background-image: url('assets/privacy-hero.png')"
+      ></div>
+      <!-- Gradient overlays -->
+      <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80"></div>
+      <div class="absolute inset-0 bg-gradient-to-r from-black/30 via-transparent to-black/30"></div>
+    </div>
+
+    <!-- Decorative elements -->
+    <div class="absolute inset-0 z-0 overflow-hidden">
+      <div
+        class="absolute top-1/4 left-1/4 w-72 h-72 rounded-full bg-amber-400/10 blur-3xl animate-breathe-1"
+      ></div>
+      <div
+        class="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-sky-400/10 blur-3xl animate-breathe-2"
+      ></div>
+    </div>
+
+    <!-- Content -->
+    <div class="relative z-10 text-center px-4 sm:px-6 max-w-5xl mx-auto" id="hero-content">
+      <!-- Badge -->
+      <div class="mb-6 animate-fade-in-up" style="animation-delay: 0.2s;">
+        <span
+          class="inline-flex items-center border border-amber-400/40 text-amber-200 bg-amber-400/10 backdrop-blur-sm px-4 py-1.5 text-sm font-medium rounded-full"
+        >
+          <svg class="w-3.5 h-3.5 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+          Compromiso con su Privacidad
+        </span>
+      </div>
+
+      <!-- Title -->
+      <h1
+        class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white tracking-tight leading-tight animate-fade-in-up"
+        style="animation-delay: 0.4s;"
+      >
+        Política de
+        <span class="gradient-text-gold">Privacidad</span>
+      </h1>
+
+      <!-- Logo with decorative lines -->
+      <div
+        class="mt-6 flex items-center justify-center gap-3 animate-scale-in"
+        style="animation-delay: 0.7s;"
+      >
+        <div class="h-px w-12 bg-gradient-to-r from-transparent to-amber-400/60"></div>
+        <img
+          src="assets/logo.png"
+          alt="Logo Soluciones Jurídico Económicas 2010 SL"
+          class="w-14 h-14 sm:w-16 sm:h-16 rounded-full shadow-2xl shadow-amber-500/20 border-2 border-white/20"
+        />
+        <div class="h-px w-12 bg-gradient-to-l from-transparent to-amber-400/60"></div>
+      </div>
+
+      <!-- Subtitle -->
+      <p
+        class="mt-6 text-lg sm:text-xl md:text-2xl text-gray-200 font-light max-w-3xl mx-auto leading-relaxed animate-fade-in-up"
+        style="animation-delay: 0.8s;"
+      >
+        Soluciones Jurídico Económicas 2010 SL
+      </p>
+
+      <p
+        class="mt-3 text-sm sm:text-base text-gray-400 max-w-2xl mx-auto animate-fade-in-up"
+        style="animation-delay: 1.0s;"
+      >
+        Madrid, España · IA Soberana · Protección de datos garantizada
+      </p>
+
+      <!-- CTA Button -->
+      <div class="mt-10 animate-fade-in-up" style="animation-delay: 1.2s;">
+        <a
+          href="#policy-sections"
+          class="inline-flex items-center border border-white/20 text-white bg-white/10 backdrop-blur-sm hover:bg-white/20 hover:border-white/40 transition-all duration-300 px-6 py-3 rounded-lg text-base font-medium"
+        >
+          Consultar Política
+          <svg class="w-4 h-4 ml-2 transition-transform group-hover:translate-x-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-float">
+      <div class="w-6 h-10 rounded-full border-2 border-white/30 flex items-start justify-center p-1.5">
+        <div class="w-1.5 h-1.5 rounded-full bg-white/60 animate-scroll-indicator"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== TRUST BANNER ==================== -->
+  <section class="relative py-12 bg-gradient-to-b from-neutral-900 to-background overflow-hidden">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <!-- Transparencia Total -->
+        <div class="reveal flex flex-col items-center text-center gap-2 p-4" style="transition-delay: 0s;">
+          <div class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-amber-400">
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <span class="text-white font-semibold text-sm">Transparencia Total</span>
+          <span class="text-gray-400 text-xs">Políticas claras</span>
+        </div>
+
+        <!-- RGPD Compliant -->
+        <div class="reveal flex flex-col items-center text-center gap-2 p-4" style="transition-delay: 0.1s;">
+          <div class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-amber-400">
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+          </div>
+          <span class="text-white font-semibold text-sm">RGPD Compliant</span>
+          <span class="text-gray-400 text-xs">Normativa europea</span>
+        </div>
+
+        <!-- IA Soberana -->
+        <div class="reveal flex flex-col items-center text-center gap-2 p-4" style="transition-delay: 0.2s;">
+          <div class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-amber-400">
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>
+          </div>
+          <span class="text-white font-semibold text-sm">IA Soberana</span>
+          <span class="text-gray-400 text-xs">Servidor propio</span>
+        </div>
+
+        <!-- Datos Protegidos -->
+        <div class="reveal flex flex-col items-center text-center gap-2 p-4" style="transition-delay: 0.3s;">
+          <div class="w-12 h-12 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-amber-400">
+            <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <span class="text-white font-semibold text-sm">Datos Protegidos</span>
+          <span class="text-gray-400 text-xs">Cifrado avanzado</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== POLICY SECTIONS ==================== -->
+  <section id="policy-sections" class="py-20 sm:py-28 bg-background">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+
+      <!-- Section header -->
+      <div class="text-center mb-16 sm:mb-20">
+        <div class="reveal mb-4">
+          <span class="inline-block border border-border text-xs font-medium px-3 py-1 rounded-full text-foreground">
+            Documento Legal
+          </span>
+        </div>
+        <h2 class="reveal text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight" style="transition-delay: 0.1s;">
+          Nuestro Compromiso con
+          <span class="gradient-text-amber-light"> su Privacidad</span>
+        </h2>
+        <p class="reveal mt-4 text-muted-foreground text-base sm:text-lg max-w-2xl mx-auto" style="transition-delay: 0.2s;">
+          Detalle completo de cómo protegemos y gestionamos sus datos personales
+          con los más altos estándares de seguridad y privacidad.
+        </p>
+      </div>
+
+      <!-- Policy Cards -->
+      <div class="space-y-6">
+
+        <!-- Section 01: Información General -->
+        <div class="reveal" style="transition-delay: 0s;">
+          <div class="group relative overflow-hidden rounded-xl border border-border/60 hover:border-border hover:shadow-lg transition-all duration-500 bg-card/80 backdrop-blur-sm">
+            <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-amber-500/10 via-amber-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative p-6 sm:p-8 md:p-10">
+              <div class="flex flex-col md:flex-row gap-6 md:gap-10">
+                <div class="flex flex-col items-center md:items-start gap-4 md:w-48 shrink-0">
+                  <div class="w-14 h-14 rounded-2xl bg-amber-500/15 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 text-amber-700">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+                  </div>
+                  <span class="text-5xl font-bold text-muted-foreground/20 select-none tabular-nums">01</span>
+                </div>
+                <div class="flex-1 space-y-4">
+                  <div class="flex items-center gap-3">
+                    <h3 class="text-xl sm:text-2xl font-bold tracking-tight">Información General</h3>
+                    <div class="h-6 w-px bg-border hidden sm:block"></div>
+                    <span class="hidden sm:inline-block text-xs font-medium px-2 py-0.5 rounded-full bg-secondary text-secondary-foreground">
+                      Sección 01
+                    </span>
+                  </div>
+                  <p class="text-muted-foreground leading-relaxed text-base sm:text-lg">
+                    Nuestra aplicación respeta su privacidad. El responsable del tratamiento de datos es Soluciones Jurídico Económicas 2010 SL.
+                  </p>
+                  <ul class="space-y-2.5 pt-2">
+                    <li class="flex items-start gap-2.5">
+                      <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>
+                      <span class="text-sm text-muted-foreground leading-relaxed">Domicilio social en Madrid, España</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>
+                      <span class="text-sm text-muted-foreground leading-relaxed">Cumplimiento normativo RGPD garantizado</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>
+                      <span class="text-sm text-muted-foreground leading-relaxed">Transparencia en el uso de sus datos</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 02: Datos Recopilados -->
+        <div class="reveal" style="transition-delay: 0.1s;">
+          <div class="group relative overflow-hidden rounded-xl border border-border/60 hover:border-border hover:shadow-lg transition-all duration-500 bg-card/80 backdrop-blur-sm">
+            <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-emerald-500/10 via-emerald-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative p-6 sm:p-8 md:p-10">
+              <div class="flex flex-col md:flex-row gap-6 md:gap-10 md:flex-row-reverse">
+                <div class="flex flex-col items-center md:items-end gap-4 md:w-48 shrink-0">
+                  <div class="w-14 h-14 rounded-2xl bg-emerald-500/15 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 text-emerald-700">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+                  </div>
+                  <span class="text-5xl font-bold text-muted-foreground/20 select-none tabular-nums">02</span>
+                </div>
+                <div class="flex-1 space-y-4">
+                  <div class="flex items-center gap-3">
+                    <h3 class="text-xl sm:text-2xl font-bold tracking-tight">Datos Recopilados</h3>
+                    <div class="h-6 w-px bg-border hidden sm:block"></div>
+                    <span class="hidden sm:inline-block text-xs font-medium px-2 py-0.5 rounded-full bg-secondary text-secondary-foreground">
+                      Sección 02
+                    </span>
+                  </div>
+                  <p class="text-muted-foreground leading-relaxed text-base sm:text-lg">
+                    Recopilamos únicamente los datos estrictamente necesarios para el funcionamiento de la aplicación.
+                  </p>
+                  <ul class="space-y-2.5 pt-2">
+                    <li class="flex items-start gap-2.5">
+                      <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>
+                      <span class="text-sm text-muted-foreground leading-relaxed">Datos mínimos y proporcionales al servicio</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>
+                      <span class="text-sm text-muted-foreground leading-relaxed">No vendemos sus datos a terceros</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>
+                      <span class="text-sm text-muted-foreground leading-relaxed">Tratamiento conforme al principio de minimización</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 03: Procesamiento de IA Soberana -->
+        <div class="reveal" style="transition-delay: 0.2s;">
+          <div class="group relative overflow-hidden rounded-xl border border-border/60 hover:border-border hover:shadow-lg transition-all duration-500 bg-card/80 backdrop-blur-sm">
+            <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-violet-500/10 via-violet-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative p-6 sm:p-8 md:p-10">
+              <div class="flex flex-col md:flex-row gap-6 md:gap-10">
+                <div class="flex flex-col items-center md:items-start gap-4 md:w-48 shrink-0">
+                  <div class="w-14 h-14 rounded-2xl bg-violet-500/15 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 text-violet-700">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="8" x="2" y="2" rx="2" ry="2"/><rect width="20" height="8" x="2" y="14" rx="2" ry="2"/><line x1="6" x2="6.01" y1="6" y2="6"/><line x1="6" x2="6.01" y1="18" y2="18"/></svg>
+                  </div>
+                  <span class="text-5xl font-bold text-muted-foreground/20 select-none tabular-nums">03</span>
+                </div>
+                <div class="flex-1 space-y-4">
+                  <div class="flex items-center gap-3">
+                    <h3 class="text-xl sm:text-2xl font-bold tracking-tight">Procesamiento de IA Soberana</h3>
+                    <div class="h-6 w-px bg-border hidden sm:block"></div>
+                    <span class="hidden sm:inline-block text-xs font-medium px-2 py-0.5 rounded-full bg-secondary text-secondary-foreground">
+                      Sección 03
+                    </span>
+                  </div>
+                  <p class="text-muted-foreground leading-relaxed text-base sm:text-lg">
+                    Esta aplicación utiliza modelos de lenguaje ejecutados en nuestra propia infraestructura de servidor privado.
+                  </p>
+                  <ul class="space-y-2.5 pt-2">
+                    <li class="flex items-start gap-2.5">
+                      <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>
+                      <span class="text-sm text-muted-foreground leading-relaxed">Consultas no enviadas a APIs externas de terceros</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>
+                      <span class="text-sm text-muted-foreground leading-relaxed">Información dentro de nuestro perímetro controlado</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>
+                      <span class="text-sm text-muted-foreground leading-relaxed">Independencia tecnológica total</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 04: Seguridad -->
+        <div class="reveal" style="transition-delay: 0.3s;">
+          <div class="group relative overflow-hidden rounded-xl border border-border/60 hover:border-border hover:shadow-lg transition-all duration-500 bg-card/80 backdrop-blur-sm">
+            <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-rose-500/10 via-rose-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative p-6 sm:p-8 md:p-10">
+              <div class="flex flex-col md:flex-row gap-6 md:gap-10 md:flex-row-reverse">
+                <div class="flex flex-col items-center md:items-end gap-4 md:w-48 shrink-0">
+                  <div class="w-14 h-14 rounded-2xl bg-rose-500/15 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 text-rose-700">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                  </div>
+                  <span class="text-5xl font-bold text-muted-foreground/20 select-none tabular-nums">04</span>
+                </div>
+                <div class="flex-1 space-y-4">
+                  <div class="flex items-center gap-3">
+                    <h3 class="text-xl sm:text-2xl font-bold tracking-tight">Seguridad</h3>
+                    <div class="h-6 w-px bg-border hidden sm:block"></div>
+                    <span class="hidden sm:inline-block text-xs font-medium px-2 py-0.5 rounded-full bg-secondary text-secondary-foreground">
+                      Sección 04
+                    </span>
+                  </div>
+                  <p class="text-muted-foreground leading-relaxed text-base sm:text-lg">
+                    Implementamos medidas de seguridad técnica avanzadas para prevenir el acceso no autorizado.
+                  </p>
+                  <ul class="space-y-2.5 pt-2">
+                    <li class="flex items-start gap-2.5">
+                      <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>
+                      <span class="text-sm text-muted-foreground leading-relaxed">Cifrado de datos en tránsito y en reposo</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>
+                      <span class="text-sm text-muted-foreground leading-relaxed">Auditorías de seguridad periódicas</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>
+                      <span class="text-sm text-muted-foreground leading-relaxed">Control de acceso estricto</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section 05: Contacto -->
+        <div class="reveal" style="transition-delay: 0.4s;">
+          <div class="group relative overflow-hidden rounded-xl border border-border/60 hover:border-border hover:shadow-lg transition-all duration-500 bg-card/80 backdrop-blur-sm">
+            <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-sky-500/10 via-sky-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div class="relative p-6 sm:p-8 md:p-10">
+              <div class="flex flex-col md:flex-row gap-6 md:gap-10">
+                <div class="flex flex-col items-center md:items-start gap-4 md:w-48 shrink-0">
+                  <div class="w-14 h-14 rounded-2xl bg-sky-500/15 flex items-center justify-center transition-transform duration-300 group-hover:scale-110 text-sky-700">
+                    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                  </div>
+                  <span class="text-5xl font-bold text-muted-foreground/20 select-none tabular-nums">05</span>
+                </div>
+                <div class="flex-1 space-y-4">
+                  <div class="flex items-center gap-3">
+                    <h3 class="text-xl sm:text-2xl font-bold tracking-tight">Contacto</h3>
+                    <div class="h-6 w-px bg-border hidden sm:block"></div>
+                    <span class="hidden sm:inline-block text-xs font-medium px-2 py-0.5 rounded-full bg-secondary text-secondary-foreground">
+                      Sección 05
+                    </span>
+                  </div>
+                  <p class="text-muted-foreground leading-relaxed text-base sm:text-lg">
+                    Para cualquier duda o para ejercer sus derechos de acceso o cancelación, contacte con nosotros.
+                  </p>
+                  <ul class="space-y-2.5 pt-2">
+                    <li class="flex items-start gap-2.5">
+                      <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>
+                      <span class="text-sm text-muted-foreground leading-relaxed">Derechos ARCO garantizados</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>
+                      <span class="text-sm text-muted-foreground leading-relaxed">Respuesta en un plazo máximo de 30 días</span>
+                    </li>
+                    <li class="flex items-start gap-2.5">
+                      <span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-primary/40 shrink-0"></span>
+                      <span class="text-sm text-muted-foreground leading-relaxed">Atención personalizada y profesional</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT CTA ==================== -->
+  <section class="py-20 sm:py-24 relative overflow-hidden">
+    <!-- Background -->
+    <div class="absolute inset-0 bg-gradient-to-b from-background via-amber-50/50 to-background dark:via-amber-950/10"></div>
+    <div class="absolute inset-0">
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-amber-400/5 blur-3xl"></div>
+    </div>
+
+    <div class="relative max-w-3xl mx-auto px-4 sm:px-6 text-center">
+      <!-- Icon -->
+      <div class="reveal-scale mb-6">
+        <div class="w-16 h-16 rounded-full bg-amber-100 flex items-center justify-center mx-auto dark:bg-amber-900/30">
+          <svg class="w-7 h-7 text-amber-600 dark:text-amber-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </div>
+      </div>
+
+      <h2 class="reveal text-3xl sm:text-4xl font-bold tracking-tight" style="transition-delay: 0.1s;">
+        ¿Tiene alguna pregunta?
+      </h2>
+
+      <p class="reveal mt-4 text-muted-foreground text-base sm:text-lg max-w-xl mx-auto leading-relaxed" style="transition-delay: 0.2s;">
+        Estamos a su disposición para cualquier consulta sobre el tratamiento de sus datos
+        personales o para ejercer sus derechos de acceso y cancelación.
+      </p>
+
+      <div class="reveal mt-8" style="transition-delay: 0.3s;">
+        <a
+          href="mailto:contacto@solucionesjuridicoseconomicas.com"
+          class="inline-flex items-center bg-gradient-to-r from-amber-600 to-amber-500 hover:from-amber-700 hover:to-amber-600 text-white shadow-lg shadow-amber-500/25 transition-all duration-300 px-6 py-3 rounded-lg text-base font-medium"
+        >
+          <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+          Contactar Ahora
+          <svg class="w-4 h-4 ml-2" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <div class="reveal mt-10" style="transition-delay: 0.4s;">
+        <div class="bg-white/60 backdrop-blur-sm border border-border/40 rounded-xl p-6 dark:bg-white/5">
+          <div class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-sm text-muted-foreground">
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-amber-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>
+              <span>Madrid, España</span>
+            </div>
+            <div class="h-4 w-px bg-border hidden sm:block"></div>
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-amber-500" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>
+              <span>Soluciones Jurídico Económicas 2010 SL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="border-t bg-muted/30 mt-auto">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-10">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <img
+            src="assets/logo.png"
+            alt="Logo"
+            class="w-8 h-8 rounded-full"
+          />
+          <div class="text-sm">
+            <p class="font-medium">Soluciones Jurídico Económicas 2010 SL</p>
+            <p class="text-muted-foreground text-xs">Madrid, España</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-4 text-xs text-muted-foreground">
+          <span>&copy; 2025 Todos los derechos reservados</span>
+        </div>
+      </div>
+
+      <div class="h-px bg-border my-6"></div>
+
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-muted-foreground">
+        <p>
+          Documento de Política de Privacidad · Cumplimiento RGPD
+        </p>
+        <div class="flex items-center gap-1.5">
+          <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <span>Sitio seguro con cifrado SSL</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== JAVASCRIPT ==================== -->
+  <script>
+    // ===== Intersection Observer for reveal animations =====
+    document.addEventListener('DOMContentLoaded', () => {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // Apply delay from inline style if present
+              const delay = entry.target.style.transitionDelay;
+              if (delay) {
+                setTimeout(() => {
+                  entry.target.classList.add('visible');
+                }, parseFloat(delay) * 1000);
+              } else {
+                entry.target.classList.add('visible');
+              }
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        {
+          threshold: 0.1,
+          rootMargin: '-50px 0px',
+        }
+      );
+
+      document.querySelectorAll('.reveal, .reveal-scale, .reveal-left, .reveal-right').forEach((el) => {
+        observer.observe(el);
+      });
+
+      // ===== Hero Parallax Effect =====
+      const heroBg = document.getElementById('hero-bg');
+      const heroContent = document.getElementById('hero-content');
+
+      if (heroBg && heroContent) {
+        window.addEventListener('scroll', () => {
+          const scrollY = window.scrollY;
+          const heroHeight = document.getElementById('hero').offsetHeight;
+
+          if (scrollY < heroHeight) {
+            const progress = scrollY / heroHeight;
+            // Parallax background
+            heroBg.style.transform = `translateY(${progress * 30}%)`;
+            // Fade out content
+            heroContent.style.opacity = Math.max(0, 1 - progress * 1.25);
+          }
+        }, { passive: true });
+      }
+
+      // ===== Smooth scroll for anchor links =====
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth' });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
